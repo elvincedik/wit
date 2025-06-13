@@ -308,6 +308,11 @@ body {
     text-decoration: none;
 }
 
+#button3 {
+    width: fit-content;
+    text-decoration: none;
+}
+
 .cta-button:hover {
     transform: translateY(-2px);
 }
