@@ -1,0 +1,929 @@
+/* Fonts */
+:root {
+  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway",  sans-serif;
+  --nav-font: "Raleway",  sans-serif;
+}
+
+/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+:root { 
+  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --default-color: #2f3138; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #0e1b4d; /* Color for headings, subheadings and title throughout the website */
+  --other-color: #5f01d0; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: var(--footer-pink);
+  /* --accent-color: #ff00d2; */
+  /* --accent-color: #5f01d0; */
+  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --footer-pink: #fa6af1fd
+}
+
+/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+:root {
+  --nav-color: rgba(255, 255, 255, 0.65);  /* The default color of the main navmenu links */
+  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #f82249; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+}
+
+
+
+/*--------------------------------------------------------------
+# Speakers Section
+--------------------------------------------------------------*/
+.speakers {
+  --default-color: #ffffff;
+}
+
+.speakers .member {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  /* width: fit-content; */
+  margin: auto;
+  /* height: 250px; */
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.35);
+}
+.speakers .member img{
+  width: 100%;
+}
+
+.speakers .member .member-info {
+  position: absolute;
+  padding: 15px 0;
+  inset: auto 0 -44px 0;
+  background: rgba(0, 0, 0, 0.6);
+  transition: 0.4s;
+}
+.speakers .member .member-info.orode {
+  inset: auto 0 -60px 0;
+}
+.speakers .member .member-info.chukwurah {
+  inset: auto 0 -44px 0;
+}
+.speakers .member .member-info.enyi {
+  inset: auto 0 -44px 0;
+}
+
+.speakers .member .member-info-content h4 {
+  color: var(--contrast-color);
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-family: var(--heading-font);
+}
+.speakers .member .member-info-content p {
+  color: var(--contrast-color);
+  font-weight: 500;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.speakers .member .member-info-content h4 a {
+  color: var(--contrast-color);
+}
+
+.speakers .member .member-info-content h4 a:hover {
+  color: var(--accent-color);
+}
+
+.speakers .member .member-info-content span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+.speakers .member .social {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.speakers .member .social a {
+  transition: color 0.3s;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  margin: 0 4px;
+  display: inline-block;
+}
+
+.speakers .member .social a:hover {
+  color: var(--default-color);
+}
+
+.speakers .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.speakers .member:hover .member-info {
+  bottom: 0;
+}
+
+@media (min-width: 992px){
+  .aima{
+    margin-top: -183px;
+  }
+  .faith{
+    margin-top: -45px;
+  }
+  .adaora{
+    margin-top: -305px;
+  }
+  .jerry{
+    margin-top: -230px;
+  }
+  .orode-div{
+    margin-top: -1px;
+  }
+  /* .chukwurah-div{
+    margin-top: -30px;
+  } */
+  .speakers .member .member-info.chukwurah {
+    inset: auto 0 -62px 0;
+  }
+  .speakers .member:hover .member-info.chukwurah {
+    bottom: 0;
+  }
+  .speakers .member .member-info.enyi {
+    inset: auto 0 -62px 0;
+  }
+  .speakers .member:hover .member-info.enyi {
+    bottom: 0;
+  }
+}
+@media (min-width: 1200px){
+  .aima{
+    margin-top: -230px;
+  }
+  .faith{
+    margin-top: -60px;
+  }
+  .adaora{
+    margin-top: -365px;
+  }
+  .jerry{
+    margin-top: -280px;
+  }
+  .orode-div{
+    margin-top: 8px;
+  }
+  .speakers .member .member-info.chukwurah {
+    inset: auto 0 -44px 0;
+  }
+  .speakers .member:hover .member-info.chukwurah {
+    bottom: 0;
+  }
+  .speakers .member .member-info.enyi {
+    inset: auto 0 -44px 0;
+  }
+  .speakers .member:hover .member-info.enyi {
+    bottom: 0;
+  }
+}
+@media (min-width: 1400px){
+  .aima{
+    margin-top: -255px;
+  }
+  .faith{
+    margin-top: -65px;
+  }
+  .adaora{
+    margin-top: -423px;
+  }
+  .jerry{
+    margin-top: -340px;
+  }
+  .orode-div{
+    margin-top: 15px;
+  }
+}
+/*--------------------------------------------------------------
+# Schedule Section
+--------------------------------------------------------------*/
+.schedule {
+  --background-color: color-mix(in srgb, var(--alt-background-color), transparent 95%);
+}
+
+.schedule .nav-tabs {
+  text-align: center;
+  margin: auto;
+  display: block;
+  border-bottom: 0;
+  margin-bottom: 30px;
+}
+
+.schedule .nav-tabs li {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.schedule .nav-tabs a {
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  background-color: var(--heading-color);
+  color: var(--contrast-color);
+  padding: 10px 100px;
+}
+
+@media (max-width: 991px) {
+  .schedule .nav-tabs a {
+    padding: 8px 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .schedule .nav-tabs a {
+    padding: 8px 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .schedule .nav-tabs a {
+    padding: 8px 30px;
+  }
+}
+
+.schedule .nav-tabs a.active {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.schedule .sub-heading {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0 auto 30px auto;
+}
+
+@media (min-width: 991px) {
+  .schedule .sub-heading {
+    width: 75%;
+  }
+}
+
+.schedule .tab-pane {
+  transition: ease-in-out 0.2s;
+}
+
+.schedule .schedule-item {
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: background-color ease-in-out 0.3s;
+}
+
+.schedule .schedule-item time {
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.schedule .schedule-item .speaker {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+.schedule .schedule-item .speaker img {
+  height: 100%;
+  transform: translateX(-50%);
+  margin-left: 50%;
+  transition: all ease-in-out 0.3s;
+}
+
+.schedule .schedule-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.schedule .schedule-item h4 span {
+  font-style: italic;
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.schedule .schedule-item p {
+  font-style: italic;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Venue Section
+--------------------------------------------------------------*/
+.venue .container-fluid {
+  margin-bottom: 3px;
+}
+
+.venue .venue-map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+}
+
+.venue .venue-info {
+  background: url("../img/vinmilan2.jpg") center center no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.venue .venue-info:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.venue .venue-info h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--contrast-color);
+}
+
+@media (max-width: 574px) {
+  .venue .venue-info h3 {
+    font-size: 24px;
+  }
+}
+
+.venue .venue-info p {
+  color: var(--contrast-color);
+  margin-bottom: 0;
+}
+
+.venue .venue-gallery-container {
+  padding-right: 12px;
+}
+
+.venue .venue-gallery {
+  overflow: hidden;
+  border-right: 3px solid var(--background-color);
+  border-bottom: 3px solid var(--background-color);
+}
+
+.venue .venue-gallery img {
+  transition: all ease-in-out 0.4s;
+}
+
+.venue .venue-gallery:hover img {
+  transform: scale(1.1);
+}
+
+/*--------------------------------------------------------------
+# Hotels Section
+--------------------------------------------------------------*/
+.hotels .card {
+  background-color: var(--surface-color);
+  color: var(--default-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  position: relative;
+  border-radius: 0;
+}
+
+.hotels .card .card-img {
+  overflow: hidden;
+  margin-bottom: 15px;
+  border-radius: 0;
+}
+
+.hotels .card .card-img img {
+  transition: 0.3s ease-in-out;
+}
+
+.hotels .card h3 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 5px;
+  padding: 0 20px;
+}
+
+.hotels .card a {
+  color: var(--heading-color);
+  transition: 0.3;
+}
+
+.hotels .card a:hover {
+  color: var(--accent-color);
+}
+
+.hotels .card .stars {
+  padding: 0 20px;
+  margin-bottom: 5px;
+}
+
+.hotels .card .stars i {
+  color: #ffc107;
+}
+
+.hotels .card p {
+  padding: 0 20px;
+  margin-bottom: 20px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  font-style: italic;
+  font-size: 15px;
+}
+
+.hotels .card:hover .card-img img {
+  transform: scale(1.1);
+}
+
+/*--------------------------------------------------------------
+# Gallery Section
+--------------------------------------------------------------*/
+.gallery {
+  overflow: hidden;
+}
+
+.gallery .swiper-wrapper {
+  height: auto;
+}
+
+.gallery .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.gallery .swiper-pagination .swiper-pagination-bullet {
+  background-color: var(--background-color);
+  border: 1px solid var(--accent-color);
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+}
+
+.gallery .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
+}
+
+.gallery .swiper-slide-active {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .gallery .swiper-wrapper {
+    padding: 40px 0;
+  }
+
+  .gallery .swiper-slide-active {
+    background: var(--background-color);
+    border: 6px solid var(--accent-color);
+    padding: 4px;
+    z-index: 1;
+    transform: scale(1.2);
+    transition: none;
+  }
+}
+
+/*--------------------------------------------------------------
+# Sponsors Section
+--------------------------------------------------------------*/
+.sponsors .clients-wrap {
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border-left: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+}
+
+.sponsors .client-logo {
+  background-color: var(--surface-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  overflow: hidden;
+}
+
+.sponsors .client-logo img {
+  padding: 50px;
+  max-width: 80%;
+  transition: 0.3s;
+}
+
+@media (max-width: 640px) {
+  .sponsors .client-logo img {
+    padding: 30px;
+    max-width: 50%;
+  }
+}
+
+.sponsors .client-logo:hover img {
+  transform: scale(1.1);
+}
+
+/*--------------------------------------------------------------
+# Faq Section
+--------------------------------------------------------------*/
+.faq .faq-container .faq-item {
+  background-color: var(--surface-color);
+  position: relative;
+  padding: 20px;
+  margin-bottom: 15px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.faq .faq-container .faq-item:last-child {
+  margin-bottom: 0;
+}
+
+.faq .faq-container .faq-item h3 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 30px 0 0;
+  transition: 0.3s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.faq .faq-container .faq-item h3 .num {
+  color: var(--accent-color);
+  padding-right: 5px;
+}
+
+.faq .faq-container .faq-item h3:hover {
+  color: var(--accent-color);
+}
+
+.faq .faq-container .faq-item .faq-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: 0.3s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.faq .faq-container .faq-item .faq-content p {
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.faq .faq-container .faq-item .faq-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 16px;
+  line-height: 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.faq .faq-container .faq-item .faq-toggle:hover {
+  color: var(--accent-color);
+}
+
+.faq .faq-container .faq-active {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 97%);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 80%);
+}
+
+.faq .faq-container .faq-active h3 {
+  color: var(--accent-color);
+}
+
+.faq .faq-container .faq-active .faq-content {
+  grid-template-rows: 1fr;
+  visibility: visible;
+  opacity: 1;
+  padding-top: 10px;
+}
+
+.faq .faq-container .faq-active .faq-toggle {
+  transform: rotate(90deg);
+  color: var(--accent-color);
+}
+
+/*--------------------------------------------------------------
+# Buy Tickets Section
+--------------------------------------------------------------*/
+.buy-tickets .pricing-item {
+  background-color: var(--surface-color);
+  box-shadow: 0 3px 20px -2px rgba(0, 0, 0, 0.1);
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.buy-tickets .pricing-item h3 {
+  font-weight: 700;
+  margin-bottom: 0;
+  font-size: 24px;
+}
+
+.buy-tickets .pricing-item h4 {
+  font-size: 48px;
+  color: var(--accent-color);
+  font-weight: 400;
+  font-family: var(--heading-font);
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.buy-tickets .pricing-item h4 sup {
+  font-size: 28px;
+}
+
+.buy-tickets .pricing-item h4 span {
+  color: color-mix(in srgb, var(--default-color), transparent 60%);
+  font-size: 18px;
+}
+
+.buy-tickets .pricing-item ul {
+  padding: 20px 0;
+  list-style: none;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  text-align: left;
+  line-height: 20px;
+}
+
+.buy-tickets .pricing-item ul li {
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.buy-tickets .pricing-item ul i {
+  color: #059652;
+  font-size: 24px;
+  padding-right: 3px;
+}
+
+.buy-tickets .pricing-item ul .na {
+  color: color-mix(in srgb, var(--default-color), transparent 60%);
+}
+
+.buy-tickets .pricing-item ul .na i {
+  color: color-mix(in srgb, var(--default-color), transparent 60%);
+}
+
+.buy-tickets .pricing-item ul .na span {
+  text-decoration: line-through;
+}
+
+.buy-tickets .buy-btn {
+  color: var(--contrast-color);
+  background-color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 4px;
+  transition: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s;
+  font-family: var(--heading-font);
+}
+
+.buy-tickets .buy-btn:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.buy-tickets .featured {
+  background: var(--accent-color);
+}
+
+.buy-tickets .featured h3,
+.buy-tickets .featured h4,
+.buy-tickets .featured h4 span,
+.buy-tickets .featured ul,
+.buy-tickets .featured ul .na,
+.buy-tickets .featured ul i,
+.buy-tickets .featured ul .na i {
+  color: var(--contrast-color);
+}
+
+.buy-tickets .featured .buy-btn {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  border-color: var(--contrast-color);
+}
+
+.buy-tickets .featured .buy-btn:hover {
+  background: color-mix(in srgb, var(--accent-color) 90%, black 15%);
+  color: var(--contrast-color);
+}
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.contact{
+  border-radius: 70px 70px 0 0;
+}
+.contact .info-item {
+  background-color: var(--surface-color);
+  padding: 20px 0 30px 0;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact .info-item i {
+  font-size: 20px;
+  color: var(--accent-color);
+  width: 56px;
+  height: 56px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50%;
+  border: 2px dotted color-mix(in srgb, var(--accent-color), transparent 40%);
+}
+
+.contact .info-item h3 {
+  font-size: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.contact .info-item p {
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.contact .php-email-form {
+  background-color: var(--surface-color);
+  height: 100%;
+  padding: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 575px) {
+  .contact .php-email-form {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  #register{
+    font-size: 13px;
+    padding: 10px 10px !important;
+  }
+  #register:hover{
+    padding: 8px 8px !important;
+  }
+  #sponsor{
+    font-size: 13px;
+    padding: 8px 10px !important;
+  }
+  .grants .grant-btn {
+    font-size: 15px;
+    padding: 10px 14px !important;
+  }
+}
+
+.contact .php-email-form input[type=text],
+.contact .php-email-form input[type=email],
+.contact .php-email-form textarea {
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border-radius: 0;
+  color: var(--default-color);
+  background-color: var(--surface-color);
+  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+.contact .php-email-form input[type=text]:focus,
+.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form textarea:focus {
+  border-color: var(--accent-color);
+}
+
+.contact .php-email-form input[type=text]::placeholder,
+.contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form textarea::placeholder {
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+.contact .php-email-form button[type=submit] {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+/*--------------------------------------------------------------
+# Events Section
+--------------------------------------------------------------*/
+.events .details h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.events .details .social {
+  margin-bottom: 15px;
+}
+
+.events .details .social a {
+  background: color-mix(in srgb, var(--default-color), transparent 92%);
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  line-height: 1;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.events .details .social a:hover {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.events .details .social a i {
+  font-size: 16px;
+  line-height: 0;
+}
+
+.events .details p {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.btn{
+  background-color: var(--accent-color);
+  border: var(--accent-color);
+  color: #fff;
+}
+
+.btn:hover{
+  background-color: #5e01d0a7;
+  color: #fff;
+}
+
+
+/* Grants */
+
+.grants{
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.grants .grant-btn {
+  background-color: var(--accent-color); /* Button color */
+  color: white;
+  padding: 11px 22px;
+  /* border-radius: 10px; */
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* border: 2px solid #fff; */
+}
+
+.grants .grant-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 20px #ff00d09d;
+}
+/*--------------------------------------------------------------
+# Starter Section Section
+--------------------------------------------------------------*/
+/* .starter-section { */
+  /* Add your styles here */
+/* } */
+
+/* evans styling styling */
+#register{
+  background-color: white;
+  color: var(--accent-color);
+  padding: 10px 24px;
+  /* border: 1px solid #fff; */
+}
+#sponsor{
+  background-color: var(--accent-color);
+  color: #fff;
+  border:2px solid var(--accent-color);
+  padding: 8px 22px;
+  /* transition: .3s; */
+}
+
+#register:hover, #sponsor:hover{
+  border: 2px solid var(--accent-color);
+  padding: 8px 22px;
+  background-color: #fff;
+  color: var(--accent-color);
+}
