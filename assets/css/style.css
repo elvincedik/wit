@@ -28,9 +28,11 @@ body {
     overflow: hidden;
     background-color: transparent;
     /* background: linear-gradient(135deg, rgb(102, 126, 234) 0%, rgb(118, 75, 162) 100%), url(../images/IMG_0096.jpg); */
-    background: linear-gradient(135deg, rgba(68, 85, 159, 0.6) 0%, rgba(75, 48, 103, 0.6) 100%), url(../images/IMG_0096.jpg);
+    /* background: linear-gradient(135deg, rgba(68, 85, 159, 0.6) 0%, rgba(75, 48, 103, 0.6) 100%), url(../images/background-images/IMG_0096.jpg); */
     /* background: linear-gradient(rgb(0,0,0, 0.6)), url(../images/Frame\ 85\ \(1\).png); */
     background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
 }
 
 .header::before {
