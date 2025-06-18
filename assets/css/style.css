@@ -4,6 +4,25 @@
     box-sizing: border-box;
 }
 
+.nav {
+  --background-color: rgba(0, 0, 0, 0);
+  --heading-color: #ffffff;
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 20px 0;
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+/* .header .logo {
+  line-height: 1;
+} */
+
+.nav .logo img {
+  max-height: 56px;
+  /* margin-right: 8px; */
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -18,6 +37,8 @@ body {
     background: white;
     box-shadow: 0 20px 60px rgba(0,0,0,0.1);
 }
+
+
 
 .header {
     /* background: linear-gradient(135deg, #ff6b6b, #ee5a24); */
