@@ -376,6 +376,15 @@ body {
   transition: 0.3s;
 }
 
+#img-div {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    margin: auto;
+}
+
+
+
 @media (max-width: 640px) {
 .client-logo img {
     padding: 30px;
