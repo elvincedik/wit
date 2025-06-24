@@ -19,7 +19,7 @@
 } */
 
 .nav .logo img {
-  max-height: 56px;
+  max-height: 36px;
   /* margin-right: 8px; */
 }
 
@@ -377,8 +377,8 @@ body {
 }
 
 #img-div {
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     overflow: hidden;
     margin: auto;
 }
